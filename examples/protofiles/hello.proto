@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package protofile.hello;
+
+
+service HelloService {
+  rpc SayHello(HelloRequest) returns (HelloResponse){}
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  message Time {
+    int64 start = 1;
+    int64 end = 2;
+  }
+  Request req = 1;
+}
+
+message Request {
+  string name = 1;
+  string message = 2;
+  bool isTrue = 3;
+}
