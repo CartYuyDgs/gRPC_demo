@@ -13,7 +13,7 @@ func (h *HelloService) SayHello(ctx context.Context, request *protofile_hello.He
 	return &protofile_hello.HelloResponse{
 		Req: &protofile_hello.Request{
 			Name:    request.Name,
-			Message: "hello",
+			Message: request.Message,
 			IsTrue:  true,
 		},
 	}, nil
