@@ -1,0 +1,18 @@
+
+syntax = "proto3";
+
+package service;
+
+service UserService {
+  rpc GetFeature(Point) returns (Feature) {}
+}
+
+message Point {
+  string name = 1;
+  int32 age = 2;
+}
+
+message Feature {
+  repeated string name = 1;
+  int32 age = 2;
+}
