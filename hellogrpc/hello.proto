@@ -12,6 +12,10 @@ message HelloRequest {
 }
 
 message HelloResponse {
+  message Time {
+    int64 start = 1;
+    int64 end = 2;
+  }
   Request req = 1;
 }
 
