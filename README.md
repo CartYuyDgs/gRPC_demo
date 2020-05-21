@@ -2,8 +2,11 @@
 go语言学习grpc笔记
 
 
-###这是一个完整的grpc实例
+### 这是一个完整的grpc实例
 
+
+服务端和客户端代码在example里
+/impl 为接口实现代码
 helloserver.exe文件和helloClient.exe文件可直接运行
 示例如下：
 
